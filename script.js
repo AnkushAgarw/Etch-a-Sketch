@@ -5,3 +5,8 @@ for (let i = 0; i < 256; i++) {
     grid.classList.add("grid");
     gridContainer.appendChild(grid);
 }
+
+gridContainer.addEventListener("mouseover", (e) => {
+    target = e.target;
+    target.classList.add("hover");
+})

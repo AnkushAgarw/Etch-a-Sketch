@@ -13,3 +13,7 @@
     height: 50px;
     border: 2px solid black;
 }
+
+.hover {
+    background-color: blue;
+}
