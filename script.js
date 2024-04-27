@@ -1,3 +1,4 @@
+console.log(getRandomRGB());
 gridContainer = document.querySelector(".container");
 
 button = document.querySelector("button");
@@ -22,6 +23,15 @@ function setNewGrid() {
     }
 }
 
+function getRandomRGB() {
+
+    function getRandomRGBValue() {
+        return Math.floor(Math.random() * 265) + 1;
+    }
+    
+    return `rgb(${getRandomRGBValue()}, ${getRandomRGBValue()}, ${getRandomRGBValue()})`
+}
+
 for (let i = 0; i < gridNumber * gridNumber; i++) {
     grid = document.createElement("div");
     grid.classList.add("grid");
@@ -32,6 +42,6 @@ for (let i = 0; i < gridNumber * gridNumber; i++) {
 gridContainer.addEventListener("mouseover", (e) => {
     target = e.target;
     if (target.matches(".grid")){
-        target.classList.add("hover");
+        target.style.backgroundColor = `${getRandomRGB()}`;;
     }
 })

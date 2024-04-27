@@ -2,10 +2,15 @@
     box-sizing: border-box;
 }
 
+.button-container {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
 .container {
     width: 960px;
     height: 960px;
-    margin: 20px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -15,5 +20,5 @@
 }
 
 .hover {
-    background-color: blue;
+    /* background-color: blue; */
 }
